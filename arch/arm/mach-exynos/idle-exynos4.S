@@ -45,6 +45,11 @@
 	 */
 
 ENTRY(exynos4_enter_lp)
+
+	#ifdef CONFIG_ARM_TRUSTZONE
+	 .arch_extension sec
+	#endif
+
 	stmfd	sp!, { r3 - r12, lr }
 
 	adr	r0, sleep_save_misc
