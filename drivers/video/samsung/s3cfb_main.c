@@ -50,7 +50,7 @@ static struct regulator *lcd_regulator;
 #endif
 struct s3cfb_global *tmp_fbdev[2];
 
-inline struct s3cfb_global *get_fimd_global(int id)
+struct s3cfb_global *get_fimd_global(int id)
 {
 	struct s3cfb_global *fbdev;
 
