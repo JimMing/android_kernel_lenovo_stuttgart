@@ -1,5 +1,8 @@
 menu "Device Drivers"
 
+# merge mali400 drivers from cm smdk4412
+source "drivers/gpu/mali400/Kconfig"
+
 source "drivers/base/Kconfig"
 
 source "drivers/connector/Kconfig"
@@ -77,9 +80,6 @@ source "drivers/mfd/Kconfig"
 source "drivers/regulator/Kconfig"
 
 source "drivers/media/Kconfig"
-
-# merge mali400 drivers from cm smdk4412
-source "drivers/gpu/mali400/Kconfig"
 
 source "drivers/video/Kconfig"
 
