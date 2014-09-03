@@ -37,6 +37,8 @@
 
 #include <linux/workqueue.h>
 
+#include <plat/cpu.h>
+
 #ifdef CONFIG_CPU_EXYNOS4210
 #define MALI_DVFS_STEPS 2
 #define MALI_DVFS_WATING 10 /* msec */
