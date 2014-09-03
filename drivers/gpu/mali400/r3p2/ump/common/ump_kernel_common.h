@@ -16,6 +16,7 @@
 #include "ump_kernel_descriptor_mapping.h"
 #include "ump_kernel_memory_backend.h"
 
+#include <linux/printk.h>
 
 #ifdef DEBUG
 	extern int ump_debug_level;

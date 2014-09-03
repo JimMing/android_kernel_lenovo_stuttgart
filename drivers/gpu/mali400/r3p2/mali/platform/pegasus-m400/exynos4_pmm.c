@@ -59,6 +59,8 @@
 #define CPUFREQ_LOCK_DURING_440 0
 #define CHIPID_REG		(S5P_VA_CHIPID + 0x4)
 
+unsigned int exynos_armclk_max;
+
 static int bMaliDvfsRun = 0;
 
 typedef struct mali_dvfs_tableTag{
